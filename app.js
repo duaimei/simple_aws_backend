@@ -28,7 +28,7 @@ app.use(bodyParser.urlencoded({ extended: true }))
 
 app.use(cors({
   // origin: 'http://localhost:8080'
-  origin: [process.env.APP_ADMIN, process.env.MAIN_APP],
+  origin: [process.env.APP_ADMIN, process.env.MAIN_APP, 'http://localhost:8181'],
 }));
 
 
